@@ -1,0 +1,70 @@
+.slider-container-box {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.thumbnails img.active {
+  border: 2px solid #000;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+button.prev-button {
+  left: 10px;
+}
+
+button.next-button {
+  right: 10px;
+}
+
+@media (max-width: 768px) and (max-width: 1024px) {
+  .btn {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  button.prev-button {
+    left: 5px;
+  }
+
+  button.next-button {
+    right: 5px;
+  }
+}
